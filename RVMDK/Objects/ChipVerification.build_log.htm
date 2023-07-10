@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 23370, 1, LIC=IC93N-YZJLF-JPNZQ-NXKFY-HJECW-XW629
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.37.0.0
+Toolchain Path:  H:\keil_v5\Arm\Cores\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      UL2CM3.DLL V1.164.7.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+H:\code\FMD\ChipVerification\RVMDK\ChipVerification.uvprojx
+Project File Date:  07/10/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'H:\keil_v5\Arm\Cores\ARM\ARMCLANG\Bin'
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'Target 1'
+compiling main.c...
+compiling aes.c...
+compiling ft32f0xx_flash.c...
+compiling ft32f0xx_gpio.c...
+compiling ft32f0xx_rcc.c...
+assembling startup_ft32f072xb.s...
+compiling system_ft32f0xx.c...
+linking...
+Program Size: Code=4810 RO-data=722 RW-data=0 ZI-data=1032  
+FromELF: creating hex file...
+".\Objects\ChipVerification.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: FMD
+                https://www.fremontmicro.com/upload/tools/pack/FMD.FT32F0xx_DFP.1.0.8.pack
+                FMD.FT32F0xx_DFP.1.0.8
+                FremontMicro FT32F0 Series Device Support and Examples
+   * Component: COMMON Version: 1.0.1
+   * Component: FLASH Version: 1.0.1
+   * Component: GPIO Version: 1.0.1
+   * Component: RCC Version: 1.0.1
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/FT32F030CBATx
+  ./RTE/_Target_1
+  H:/keil_v5/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  H:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/CMSIS/FT32F0xx/Include
+  H:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/FT32F0xx_Driver/Inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: FMD.StdDriverOne::Device:FT32Driver:COMMON:1.0.1
+      Source file:   Drivers/FT32F0xx_Driver/templates/Src/main.c
+      Include file:  Drivers/FT32F0xx_Driver/templates/Inc/main.h
+      Source file:   Drivers/FT32F0xx_Driver/templates/Src/ft32f0xx_it.c
+      Include file:  Drivers/FT32F0xx_Driver/templates/Inc/ft32f0xx_conf.h
+      Include file:  Drivers/FT32F0xx_Driver/templates/Inc/ft32f0xx_it.h
+
+   * Component: FMD.StdDriverOne::Device:FT32Driver:FLASH:1.0.1
+      Source file:   Drivers/FT32F0xx_Driver/Src/ft32f0xx_flash.c
+
+   * Component: FMD.StdDriverOne::Device:FT32Driver:GPIO:1.0.1
+      Source file:   Drivers/FT32F0xx_Driver/Src/ft32f0xx_gpio.c
+
+   * Component: FMD.StdDriverOne::Device:FT32Driver:RCC:1.0.1
+      Source file:   Drivers/FT32F0xx_Driver/Src/ft32f0xx_rcc.c
+
+   * Component: FMD.StdDriverOne::Device:Startup:1.0.1
+      Include file:  Drivers/CMSIS/FT32F0xx/Include/ft32f0xx.h
+      Source file:   Drivers/CMSIS/FT32F0xx/source/arm/startup_ft32f072xb.s
+      Source file:   Drivers/CMSIS/FT32F0xx/source/system_ft32f0xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

@@ -1,0 +1,9 @@
+--target=arm-arm-none-eabi -mcpu=cortex-m0 -masm=auto -c
+-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"
+-I./RTE/Device/FT32F030CBATx
+-I./RTE/_Target_1
+-IH:/keil_v5/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+-IH:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/CMSIS/FT32F0xx/Include
+-IH:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/FT32F0xx_Driver/Inc
+-Wa,armasm,--pd,"__UVISION_VERSION SETA 537" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"FT32F030xB SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"
+-o ./objects/startup_ft32f072xb.o "RTE/Device/FT32F030CBATx/startup_ft32f072xb.s"
