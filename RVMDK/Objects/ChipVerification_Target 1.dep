@@ -1,7 +1,7 @@
 Dependencies for Project 'ChipVerification', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6180000::V6.18::ARMCLANG
-F (..\User\src\main.c)(0x64AB5C95)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -w -I ../User/inc -I ../utils/inc-I./RTE/Device/FT32F030CBATx-I./RTE/_Target_1-IH:/keil_v5/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IH:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/CMSIS/FT32F0xx/Include-IH:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/FT32F0xx_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DFT32F030xB -D_RTE_-o ./objects/main.o -MD)
-I (..\User\inc\main.h)(0x64A7DF49)
+F (..\User\src\main.c)(0x64AD524F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -w -I ../User/inc -I ../utils/inc-I./RTE/Device/FT32F030CBATx-I./RTE/_Target_1-IH:/keil_v5/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IH:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/CMSIS/FT32F0xx/Include-IH:/keil_v5/Arm/Packs/FMD/FT32F0xx_DFP/1.0.8/Drivers/FT32F0xx_Driver/Inc-D__UVISION_VERSION="537" -D_RTE_ -DFT32F030xB -D_RTE_-o ./objects/main.o -MD)
+I (..\User\inc\main.h)(0x64ACB32B)
 I (H:\keil_v5\Arm\Packs\FMD\FT32F0xx_DFP\1.0.8\Drivers\CMSIS\FT32F0xx\Include\ft32f0xx.h)(0x62A14EDC)
 I (H:\keil_v5\Arm\Packs\FMD\FT32F0xx_DFP\1.0.8\Drivers\CMSIS\FT32F0xx\Include\ft32f030xb.h)(0x62A14FCE)
 I (H:\keil_v5\Arm\Packs\FMD\FT32F0xx_DFP\1.0.8\Drivers\CMSIS\FT32F0xx\Include\core_cm0.h)(0x559CEB9A)

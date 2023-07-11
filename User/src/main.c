@@ -14,11 +14,12 @@
 
 #define ApplicationAddress    ((uint32_t)0x08002000)   //APP Program start address
 #define IaplicationAddress    ((uint32_t)0x08000000)   //IAP Program start address
-#define ApplicaflagAddress    ((uint32_t)0x08001E00)   //APP Program start flag
 
 // ��ŵ�ַ
 #define DATA_ADDRESS 0x801FC00
 #define DATA_ADDRESS_END 0x801FFFF
+
+#define CHIPUID_ADDRESS 0x1FFFF7AC
 // ҳ��С
 #define FLASH_PAGE_SIZE ((uint32_t)0x00000200) 
 // uid����
@@ -53,14 +54,14 @@ _Bool check_data() {
 
 	
    // 读数据
-   if ((*(uint32_t*)(DATA_ADDRESS) != (uint32_t)0 && *(uint32_t*)(0x1FFFF7AC + 4) != (uint32_t)0 && *(uint32_t*)(0x1FFFF7AC + 8) != (uint32_t)0 ) || (
-	   (*(uint32_t*)(DATA_ADDRESS) != (uint32_t)0xFFFFFFFF && *(uint32_t*)(0x1FFFF7AC + 4) != (uint32_t)0xFFFFFFFF && *(uint32_t*)(0x1FFFF7AC + 8) != (uint32_t)0xFFFFFFFF )))
+   if ((*(uint32_t*)(DATA_ADDRESS) != (uint32_t)0 && *(uint32_t*)(DATA_ADDRESS + 4) != (uint32_t)0 && *(uint32_t*)(DATA_ADDRESS + 8) != (uint32_t)0 ) || (
+	   (*(uint32_t*)(DATA_ADDRESS) != (uint32_t)0xFFFFFFFF && *(uint32_t*)(DATA_ADDRESS + 4) != (uint32_t)0xFFFFFFFF && *(uint32_t*)(DATA_ADDRESS + 8) != (uint32_t)0xFFFFFFFF )))
 	{
 		// 获取芯片的UID和密文
 		for(uint8_t i = 0 ;i < 16;i++)
 		{
 			encrypted_data[i] = *(uint8_t*)(DATA_ADDRESS + i);
-			chip_uid[i] = *(uint8_t*)(0x1FFFF7AC + i);
+			chip_uid[i] = *(uint8_t*)(CHIPUID_ADDRESS + i);
 #if DEBUGMODE
 			data1[i] = chip_uid[i];
 			data2[i] = encrypted_data[i];
@@ -88,7 +89,7 @@ _Bool check_data() {
 		// 获取芯片的UID
 		for(uint8_t i = 0 ;i < UIDLENGTH;i++)
 		{
-			chip_uid[i] = *(uint8_t*)(0x1FFFF7AC + i);
+			chip_uid[i] = *(uint8_t*)(CHIPUID_ADDRESS + i);
 #if DEBUGMODE
 			data1[i]= chip_uid[i];
 #endif

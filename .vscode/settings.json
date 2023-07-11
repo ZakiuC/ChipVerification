@@ -40,7 +40,8 @@
 		"common_function.h": "c",
 		"peripheralconfig.h": "c",
 		"exti.h": "c",
-		"math.h": "c"
+		"math.h": "c",
+		"main.h": "c"
 	},
 	"C_Cpp.errorSquiggles": "Disabled",
 	"python.formatting.provider": "black"
