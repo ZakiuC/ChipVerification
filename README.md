@@ -6,7 +6,7 @@
 ## 2. 文件介绍
 main.c ：主程序，包含验证UID和加密写入flash和跳转至主程序的代码
 
-aes.c ：aes加密算法实现，详细见(https://github.com/kokke/tiny-AES-c)此仓库
+aes.c ：aes加密算法实现，详细见此[仓库](https://github.com/kokke/tiny-AES-c)
 
 ## 3. 注意点
 跳转app代码之前需要关闭所有调用过的外设，在app代码中重新初始化，在跳转后需要重定向中断向量表，否则会出现跳转后无法正常运行的情况。
